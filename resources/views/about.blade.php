@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.guest.app')
 
 @section('title', 'Data Warga Rumbai')
 
@@ -43,7 +43,7 @@
             </div>
           </div>
           <p class="mt-3">
-            Fasilitas publik lengkap: puskesmas, sekolah, tempat ibadah, dan pusat perbelanjaan. 
+            Fasilitas publik lengkap: puskesmas, sekolah, tempat ibadah, dan pusat perbelanjaan.
             Masyarakat multikultural dengan sektor utama perdagangan, jasa, dan industri.
           </p>
         </div>
@@ -171,12 +171,12 @@
                 once: true
             });
         }
-        
+
         // Initialize PureCounter
         if (typeof PureCounter !== 'undefined') {
             new PureCounter();
         }
-        
+
         // Animate progress bars on scroll
         const progressBars = document.querySelectorAll('.progress-bar');
         const animateProgressBars = () => {
@@ -185,7 +185,7 @@
                 bar.style.width = value + '%';
             });
         };
-        
+
         // Use Intersection Observer to trigger animation
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -194,15 +194,15 @@
                 }
             });
         }, { threshold: 0.3 });
-        
+
         const skillsSection = document.querySelector('.skills');
         if (skillsSection) {
             observer.observe(skillsSection);
         }
     });
-    
+
 </script>
-@include('layouts.css')
+@include('layouts.guest.css')
 
 {{-- Bootstrap CSS --}}
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">

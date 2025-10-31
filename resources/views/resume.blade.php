@@ -1,11 +1,11 @@
-@extends('layouts.app')
+@extends('layouts.guest.app')
 
 @section('title', 'Perangkat Desa Rumbai')
 
 
 @push('layouts.css')
- 
-  
+
+
 @endpush
 
 @section('content')
@@ -21,7 +21,7 @@
       </div>
 
       <div class="org-chart-container">
-        
+
         <!-- Level 1: Kepala Desa -->
         <div class="org-level" id="level-kades">
           <div class="org-node">
@@ -47,7 +47,7 @@
           <div class="org-node">
             <div class="perangkat-card shadow-sm">
               <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="Sekretaris Desa" class="perangkat-img">
-              <h5 class="nama">Anisa Rahmawati, S.E.</h5>
+              <h5 class="nama">Vanesya Wilyan, S.E.</h5>
               <p class="jabatan">SEKRETARIS DESA</p>
               <hr>
               <div class="detail">
@@ -58,7 +58,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Garis Penghubung -->
         <div class="connector-line-v"></div>
         <div class="connector-line-h"></div>
@@ -73,7 +73,7 @@
           <div class="org-node">
             <div class="perangkat-card shadow-sm">
               <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="Kaur Pemerintahan" class="perangkat-img">
-              <h5 class="nama">Ahmad Zailani</h5>
+              <h5 class="nama">Thariq Alfayyadh</h5>
               <p class="jabatan">KAUR PEMERINTAHAN</p>
               <div class="detail">
                 <p><strong>NIP:</strong> 1985... | <strong>Kontak:</strong> 0812...</p>
@@ -83,7 +83,7 @@
           <div class="org-node">
             <div class="perangkat-card shadow-sm">
               <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Kaur Kesejahteraan" class="perangkat-img">
-              <h5 class="nama">Siti Maimunah</h5>
+              <h5 class="nama">Aliyah Rahma</h5>
               <p class="jabatan">KAUR KESEJAHTERAAN</p>
               <div class="detail">
                 <p><strong>NIP:</strong> 1988... | <strong>Kontak:</strong> 0813...</p>
@@ -93,7 +93,7 @@
           <div class="org-node">
             <div class="perangkat-card shadow-sm">
               <img src="https://randomuser.me/api/portraits/men/14.jpg" alt="Kaur Pelayanan" class="perangkat-img">
-              <h5 class="nama">Rahmat Hidayat</h5>
+              <h5 class="nama">Syabil Aljabbar</h5>
               <p class="jabatan">KAUR PELAYANAN</p>
               <div class="detail">
                 <p><strong>NIP:</strong> 1990... | <strong>Kontak:</strong> 0821...</p>

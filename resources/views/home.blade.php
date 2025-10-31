@@ -1,8 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.guest.app')
 
 @section('title', 'Beranda - Desa Rumbai')
 
-@include('layouts.app')
+@include('layouts.guest.app')
 
 
 @push('layouts.css')
